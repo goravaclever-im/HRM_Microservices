@@ -1,0 +1,66 @@
+services:
+
+  employee_service:
+
+    build:
+      context: ./employee_service
+
+    container_name: employee_service
+
+    ports:
+      - "8004:8004"
+
+
+  attendance_service:
+
+    build:
+      context: ./attendance_service
+
+    container_name: attendance_service
+
+    ports:
+      - "8003:8003"
+
+
+  payroll_service:
+
+    build:
+      context: ./payroll_service
+
+    container_name: payroll_service
+
+    ports:
+      - "8009:8009"
+
+
+  leave_service:
+
+    build:
+      context: ./leave_service
+
+    container_name: leave_service
+
+    ports:
+      - "8014:8014"
+
+
+  notification_service:
+
+    build:
+      context: ./notification_service
+
+    container_name: notification_service
+
+    ports:
+      - "8018:8018"
+
+
+  banking_service:
+
+    build:
+      context: ./banking_service
+
+    container_name: banking_service
+
+    ports:
+      - "8019:8019"
