@@ -4,3 +4,4 @@ venv/
 hrms.db
 generated_documents/
 .env
+venv_linux/
